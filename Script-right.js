@@ -17,6 +17,7 @@ var sliderRight = d3.sliderBottom()
     )
     .on('onchange', num => {
         right.selectAll('circle').filter(':last-child').attr('r', num)
+        right.on('click', createCircle)
     })
 
 var gSliderRight = d3
