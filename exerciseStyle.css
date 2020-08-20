@@ -1,0 +1,16 @@
+h1 {
+    font-size: 40px;
+    font-family: 'Courier New', Courier, monospace;
+    color: orange;
+}
+
+.random {
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.instruction {
+    color: black;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+}
