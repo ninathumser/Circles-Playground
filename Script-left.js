@@ -3,7 +3,7 @@ d3.csv("https://raw.githubusercontent.com/chumo/Data2Serve/master/transition_clu
     var mySVGCircleSize = d3.select("#circleSize");
     var circles = mySVGCircleSize.selectAll("circle").data(data);
     
-    var slider = d3.sliderBottom()
+    var sliderLeft = d3.sliderBottom()
         .min(0)
         .max(20)
         .step(1)
@@ -31,7 +31,7 @@ d3.csv("https://raw.githubusercontent.com/chumo/Data2Serve/master/transition_clu
                     .attr("cy", function (d) {return d.Yf;})
             })
 
-    var gSlider = d3
+    var gSliderLeft = d3
         .select('#slider-circle-size')
         .append('svg')
         .attr('width', 500)
@@ -39,7 +39,7 @@ d3.csv("https://raw.githubusercontent.com/chumo/Data2Serve/master/transition_clu
         .append('g')
         .attr('transform', 'translate(30,30)');
 
-    gSlider.call(slider);
-    circles.attr('r', slider.value());
+    gSliderLeft.call(sliderLeft);
+    circles.attr('r', sliderLeft.value());
 
 })

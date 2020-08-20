@@ -4,22 +4,41 @@
 <head>
     <script src="https://d3js.org/d3.v5.min.js"></script>
     <script src="https://unpkg.com/d3-simple-slider"></script>
-    <link rel="stylesheet" type="text/css" href="exerciseStyle.css">
+    <link rel="stylesheet" type="text/css" href="Style.css">
 </head>
 
 
 <body>
-    <div>
-        <h1>Circles</h1>
-        <p class='random'>Welcome to my little circles playground!</p><br>
-        <p class='instruction'>Please select the size of the circles!</p><br>
+    <h1 style="text-align:center">Circles, Circles, Circles</h1>
+
+    <div class="row">
+        <div class="column">
+            <div>
+                <br><p class='instruction'>Please select the size of the circles!</p>
+            </div>
+        
+            <div id="slider-circle-size"></div>
+        
+            <svg id='circleSize' width="500px" height="500px" style="background:Whitesmoke;"></svg>
+
+        </div>
+
+
+        <div class="column">
+
+            <div>
+                <br><p class='instruction'>Click in the picture an change the size of the circles.</p>
+            </div>
+        
+            <div id="slider-circle-size-right"></div>
+
+            <svg id='paintCircles' width="500px" height="500px" style="background:Whitesmoke;"></svg>
+
+        </div>
     </div>
 
-    <div id="slider-circle-size"></div>
-
-    <svg id='circleSize' width="500px" height="500px" style="background:Whitesmoke;"></svg>
-
-    <script src="exerciseScript.js"></script>
+    <script src="Script-left.js"></script>
+    <script src="Script-right.js"></script>
 
 </body>
 
