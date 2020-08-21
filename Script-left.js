@@ -22,13 +22,13 @@ d3.csv("https://raw.githubusercontent.com/chumo/Data2Serve/master/transition_clu
             circles
                 .enter()
                     .append("circle")
-                    .attr("cx", function (d) {return d.Xi;})
-                    .attr("cy", function (d) {return d.Yi;})
+                    .attr("cx", d => d.Xi)
+                    .attr("cy", d => d.Yi)
                     .attr("r", num)
-                    .style('fill', function (d) {return d.color;})
+                    .style('fill', d => d.color)
                 .transition().delay(500).duration(5000).ease(d3.easeBounceOut)
-                    .attr("cx", function (d) {return d.Xf;})
-                    .attr("cy", function (d) {return d.Yf;})
+                    .attr("cx", d => d.Xf)
+                    .attr("cy", d => d.Yf)
             })
 
     var gSliderLeft = d3

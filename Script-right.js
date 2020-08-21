@@ -39,7 +39,7 @@ function createCircle(){
         attr('cy',y).
         attr('r',sliderRight.value()).
         style('fill', 'green');
-    setTimeout(deleteCircles, 5000);
+    setTimeout(deleteCircles, 3000);
 }
 
 function whatever(){
